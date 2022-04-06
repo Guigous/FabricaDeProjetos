@@ -51,27 +51,31 @@ Fluxo de Jogo: Montezumo e um jogo que acompanha as aventuras de Cris, uma arque
 
 
 ##**PÁGINA 04 - PERSONAGENS E CONTROLES**
-
-
+Cris: A protagonista. Uma jovem arqueologa e exploradora, recebe o desafio da Deusa e imediatamente toma uma atitude e parte para enfrentar os desafios do templo antigo.
+No inicio de Montezumo a protagonista recebe um artefato-canhao sagrado (chamado Jaguar). O Jogador consegue se movimentar, pular, e se propulsionar para frente enquanto atira com o canhao em pequenas esferas coloridas.
 
 ##**PÁGINA 05 - PRINCIPAIS CONCEITOS DO GAMEPLAY E CARACTERÍSTICAS DA PLATAFORMA**
 
-
+Cada fase e uma camara diferente do templo com armadilhas diversas e desafios, onde o jogador precisa fazer a fila de bolas desaparecer por completo somando as bolas no percurso com as disparadas pelo Jaguar e se protegendo das armadilhas que o templo possui
 
 ##**PÁGINA 06 - MUNDO DO JOGO**
 
-
+Montezumo se passa em um templo antigo em uma floresta da america central onde o acesso e muito restrito devido a dificuldade do trajeto, animais selvagens e a densidade da mata ao seu redor.
+Dentro do templo o ambiente muda para um tipo de catacumba ha muito abandonada com paredes cheias de musgo, cipos pendurados, paredes rachadas, armadilhas de espinhos, buracos sem fundo e uma penumbra, que apesar das tochas que magicamente se acendem para iluminar o ambiente, continua constante.
 
 ##**PÁGINA 07 - INTERFACE**
 
-
+A interface conta com uma HUD que contempla no numero de vidas pontuacao e a cor da proxima bola a ser disparada.
 
 ##**PÁGINA 08 - MECÂNICAS E POWER-UPS**
 
-
+As mecanicas sao : Pula, Andar, Impulso, Atirar.
 
 ##**PÁGINA 09 - INIMIGOS E BOSSES**
 
 
 
 ##**PÁGINA 10 - CENAS DE CORTE, MATERIAIS DE BÔNUS E CONCORRÊNCIA**
+
+As cenas de corte serao em formato de historia em quadrinho sendo reproduzidas no inicio e entre as fases.
+Concorrentes: Candy Crush e Jogos casuais de Puzzle.
