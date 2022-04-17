@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Montezumo.unity
+    path: Assets/Scenes/Montezumo.unity
     guid: 7e7bd08e0ad479346967fe6766971c71
   - enabled: 1
-    path: Assets/Fase1.unity
+    path: Assets/Scenes/Fase1.unity
     guid: 97ae0a61aa01be740a200259b0dccb49
   m_configObjects: {}
