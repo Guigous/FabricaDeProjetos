@@ -700,7 +700,7 @@ Animator:
   m_GameObject: {fileID: 547298045}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 67ec164da4a57da4aa42663af03c4c1d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 52093e1abf6108f4785dec4550d57884, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2bfb062be9ebed6489743e238ddfea03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -724,7 +724,8 @@ MonoBehaviour:
   useCharacterForward: 0
   turnSpeed: 10
   sprintJoystick: 332
-  sprintKeyboard: 32
+  sprintKeyboard: 304
+  jumpKeyboard: 32
 --- !u!54 &547298049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1334,30 +1335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1322517812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 115016, guid: afd19ab1d4bb70b499bb2f62171a522d, type: 3}
-  m_PrefabInstance: {fileID: 2134492241}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1322517813
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322517812}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3f95093e6863122408bbc4084ba0b267, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1487814589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1542,7 +1519,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1826773602
 PrefabInstance:
@@ -1750,7 +1727,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2057,8 +2034,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.017
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11115020, guid: afd19ab1d4bb70b499bb2f62171a522d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afd19ab1d4bb70b499bb2f62171a522d, type: 3}
 --- !u!1001 &2140104301
 PrefabInstance:
