@@ -11,13 +11,21 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintJoystick = KeyCode.JoystickButton2;
     public KeyCode sprintKeyboard = KeyCode.LeftShift;
     public KeyCode jumpKeyboard = KeyCode.Space;
+    public float jumpForce;
 
+        //Raycast Settings
+        RaycastHit hit;
+        public float maxDistance;
+        bool isHiting;
+        public float radius;
 
     private float turnSpeedMultiplier;
     private float speed = 0f;
     private float direction = 0f;
     private bool isSprinting = false;
     private bool isJumping = false;
+    private Rigidbody rb;
+    
     
     private Animator anim;
     private Vector3 targetDirection;
@@ -31,6 +39,7 @@ public class CharacterMovement : MonoBehaviour
 	{
 	    anim = GetComponent<Animator>();
 	    mainCamera = Camera.main;
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -39,14 +48,19 @@ public class CharacterMovement : MonoBehaviour
 	    input.x = Input.GetAxis("Horizontal");
 	    input.y = Input.GetAxis("Vertical");
 
-		// set speed to both vertical and horizontal inputs
-        if (useCharacterForward) 
-            speed = Mathf.Abs(input.x) + input.y;
-        else 
-            speed = Mathf.Abs(input.x) + Mathf.Abs(input.y);
+        Grounded();
+        isHiting = Physics.SphereCast(transform.position, transform.localScale.x / radius, Vector3.down, out hit, maxDistance);
+            Physics.Raycast(transform.position, Vector3.down);
 
-        speed = Mathf.Clamp(speed, 0f, 1f);
-        speed = Mathf.SmoothDamp(anim.GetFloat("Speed"), speed, ref velocity, 0.1f);
+            // set speed to both vertical and horizontal inputs
+        if (useCharacterForward) 
+          speed = Mathf.Abs(input.x) + input.y;
+        else 
+          speed = Mathf.Abs(input.x) + Mathf.Abs(input.y);
+
+          speed = Mathf.Clamp(speed, 0f, 1f);
+          speed = Mathf.SmoothDamp(anim.GetFloat("Speed"), speed, ref velocity, 0.1f);
+        
         anim.SetFloat("Speed", speed);
 
 	    if (input.y < 0f && useCharacterForward) 
@@ -57,15 +71,17 @@ public class CharacterMovement : MonoBehaviour
         anim.SetFloat("Direction", direction);
 
         //Set Jump
-        isJumping = (((Input.GetKey(jumpKeyboard) || Input.GetKey(jumpKeyboard)) && input != Vector2.zero && direction >= 0f));
-        anim.SetTrigger("Jump");
+        
+        
 
         // set sprinting
         isSprinting = ((Input.GetKey(sprintJoystick) || Input.GetKey(sprintKeyboard)) && input != Vector2.zero && direction >= 0f);
         anim.SetBool("IsSprinting", isSprinting);
+
         
-        // Update target direction relative to the camera view (or not if the Keep Direction option is checked)
-        UpdateTargetDirection();
+
+            // Update target direction relative to the camera view (or not if the Keep Direction option is checked)
+            UpdateTargetDirection();
 
             if (input != Vector2.zero && targetDirection.magnitude > 0.1f)
         {
@@ -80,8 +96,53 @@ public class CharacterMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(euler), turnSpeed * turnSpeedMultiplier * Time.deltaTime);
         }
 	}
-       
-    public virtual void UpdateTargetDirection()
+
+        public void Update()
+        {
+            if (Input.GetKeyDown(jumpKeyboard) && isGrounded == true)
+            {
+                rb.AddForce(1, 1*jumpForce, 1);
+                anim.SetBool("isJumping", isJumping);
+                
+            }
+            
+
+        }
+
+        private bool isGrounded;
+
+        public void Grounded()
+        {
+            if(isHiting)
+            {
+                isGrounded = true;
+                Debug.Log("Grounded");
+
+            }
+            else
+            {
+                isGrounded = false;
+                Debug.Log("Not Grounded");
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (isHiting)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawRay(transform.position, Vector3.down * maxDistance);
+                Gizmos.DrawWireSphere(transform.position + (Vector3.down * hit.distance), transform.localScale.x / radius);
+                print(hit.collider.name);
+            }
+            else
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawRay(transform.position, Vector3.down * maxDistance + new Vector3(0, -transform.localScale.x / radius, 0));
+            }
+        }
+        
+        public virtual void UpdateTargetDirection()
     {
         if (!useCharacterForward)
         {
