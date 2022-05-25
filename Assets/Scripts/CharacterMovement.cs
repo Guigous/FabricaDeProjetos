@@ -12,6 +12,8 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintKeyboard = KeyCode.LeftShift;
     public KeyCode jumpKeyboard = KeyCode.Space;
     public float jumpForce;
+    public GameObject grdCheck;
+        public LayerMask ground;
     
 
         //Raycast Settings
@@ -50,8 +52,8 @@ public class CharacterMovement : MonoBehaviour
 	    input.y = Input.GetAxis("Vertical");
 
         Grounded();
-        isHiting = Physics.SphereCast(transform.position, transform.localScale.x / radius, Vector3.down, out hit, maxDistance);
-        
+            //isHiting = Physics.SphereCast(transform.position, transform.localScale.x / radius, Vector3.down, out hit, maxDistance);
+            isHiting = Physics.Raycast(transform.position, Vector3.down,out hit,maxDistance);
 
             // set speed to both vertical and horizontal inputs
         if (useCharacterForward) 
@@ -101,13 +103,13 @@ public class CharacterMovement : MonoBehaviour
 
         public void Update()
         {
-            if (Input.GetKeyDown(jumpKeyboard) && isGrounded == true)
+            if (Input.GetKeyDown(jumpKeyboard) && isHiting == true)
             {
-                rb.AddForce(1, 1*jumpForce, 1);
+                //rb.AddForce(1, 1*jumpForce, 1);
                 anim.SetBool("isJumping", true);
                 
             }
-            else
+            if(isHiting == false)
             {
                 anim.SetBool("isJumping", false);
             }
@@ -118,7 +120,7 @@ public class CharacterMovement : MonoBehaviour
 
         public void Grounded()
         {
-            if(isHiting == true)
+            if(isHiting)
             {
                 isGrounded = true;
                 Debug.Log("Grounded");
@@ -137,13 +139,13 @@ public class CharacterMovement : MonoBehaviour
             {
                 Gizmos.color = Color.red;
                 Gizmos.DrawRay(transform.position, Vector3.down * maxDistance);
-                Gizmos.DrawWireSphere(transform.position + (Vector3.down * hit.distance), transform.localScale.x / radius);
+                //Gizmos.DrawWireSphere(transform.position + (Vector3.down * hit.distance), transform.localScale.x / radius);
                 print(hit.collider.name);
             }
             else
             {
                 Gizmos.color = Color.green;
-                Gizmos.DrawRay(transform.position, Vector3.down * maxDistance + new Vector3(0, -transform.localScale.x / radius, 0));
+                Gizmos.DrawRay(transform.position, Vector3.down * maxDistance);
             }
         }
         
