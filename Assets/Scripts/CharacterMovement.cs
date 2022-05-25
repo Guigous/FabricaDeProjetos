@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintKeyboard = KeyCode.LeftShift;
     public KeyCode jumpKeyboard = KeyCode.Space;
     public float jumpForce;
+    
 
         //Raycast Settings
         RaycastHit hit;
@@ -50,7 +51,7 @@ public class CharacterMovement : MonoBehaviour
 
         Grounded();
         isHiting = Physics.SphereCast(transform.position, transform.localScale.x / radius, Vector3.down, out hit, maxDistance);
-            Physics.Raycast(transform.position, Vector3.down);
+        
 
             // set speed to both vertical and horizontal inputs
         if (useCharacterForward) 
@@ -70,8 +71,9 @@ public class CharacterMovement : MonoBehaviour
         
         anim.SetFloat("Direction", direction);
 
-        //Set Jump
-        
+            //Set Jump
+            isJumping = (Input.GetKey(jumpKeyboard));
+            anim.SetBool("isJumping", isJumping);
         
 
         // set sprinting
@@ -102,10 +104,13 @@ public class CharacterMovement : MonoBehaviour
             if (Input.GetKeyDown(jumpKeyboard) && isGrounded == true)
             {
                 rb.AddForce(1, 1*jumpForce, 1);
-                anim.SetBool("isJumping", isJumping);
+                anim.SetBool("isJumping", true);
                 
             }
-            
+            else
+            {
+                anim.SetBool("isJumping", false);
+            }
 
         }
 
@@ -113,7 +118,7 @@ public class CharacterMovement : MonoBehaviour
 
         public void Grounded()
         {
-            if(isHiting)
+            if(isHiting == true)
             {
                 isGrounded = true;
                 Debug.Log("Grounded");
