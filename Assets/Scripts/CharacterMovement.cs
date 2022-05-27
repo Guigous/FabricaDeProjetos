@@ -12,8 +12,7 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintKeyboard = KeyCode.LeftShift;
     public KeyCode jumpKeyboard = KeyCode.Space;
     public float jumpForce;
-    public GameObject grdCheck;
-        public LayerMask ground;
+    public LayerMask ground;
     
 
         //Raycast Settings
@@ -27,7 +26,7 @@ public class CharacterMovement : MonoBehaviour
     private float direction = 0f;
     private bool isSprinting = false;
     private bool isJumping = false;
-    private Rigidbody rb;
+    
     
     
     private Animator anim;
@@ -42,7 +41,7 @@ public class CharacterMovement : MonoBehaviour
 	{
 	    anim = GetComponent<Animator>();
 	    mainCamera = Camera.main;
-        rb = GetComponent<Rigidbody>();
+        
 	}
 	
 	// Update is called once per frame
@@ -52,8 +51,8 @@ public class CharacterMovement : MonoBehaviour
 	    input.y = Input.GetAxis("Vertical");
 
         Grounded();
-            //isHiting = Physics.SphereCast(transform.position, transform.localScale.x / radius, Vector3.down, out hit, maxDistance);
-            isHiting = Physics.Raycast(transform.position, Vector3.down,out hit,maxDistance);
+        
+        isHiting = Physics.Raycast(transform.position, Vector3.down,out hit,maxDistance);
 
             // set speed to both vertical and horizontal inputs
         if (useCharacterForward) 
@@ -105,7 +104,7 @@ public class CharacterMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(jumpKeyboard) && isHiting == true)
             {
-                //rb.AddForce(1, 1*jumpForce, 1);
+                
                 anim.SetBool("isJumping", true);
                 
             }
@@ -113,7 +112,11 @@ public class CharacterMovement : MonoBehaviour
             {
                 anim.SetBool("isJumping", false);
             }
-
+            if (HudManager.Instance.healthBar.value <= 0)
+            {
+                HudManager.Instance.Death();
+                this.enabled = false;
+            }
         }
 
         private bool isGrounded;
@@ -123,13 +126,13 @@ public class CharacterMovement : MonoBehaviour
             if(isHiting)
             {
                 isGrounded = true;
-                Debug.Log("Grounded");
+                
 
             }
             else
             {
                 isGrounded = false;
-                Debug.Log("Not Grounded");
+                
             }
         }
 
@@ -139,8 +142,6 @@ public class CharacterMovement : MonoBehaviour
             {
                 Gizmos.color = Color.red;
                 Gizmos.DrawRay(transform.position, Vector3.down * maxDistance);
-                //Gizmos.DrawWireSphere(transform.position + (Vector3.down * hit.distance), transform.localScale.x / radius);
-                print(hit.collider.name);
             }
             else
             {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spheres
   - Floor
+  - Trap
   layers:
   - Default
   - TransparentFX
