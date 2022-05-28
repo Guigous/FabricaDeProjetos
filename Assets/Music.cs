@@ -14,10 +14,10 @@ public class ExampleClass : MonoBehaviour
 
     IEnumerator playEngineSound()
     {
-        audio.clip = smileStartClip;
-        audio.Play();
-        yield return new WaitForSeconds(audio.clip.length);
-        audio.clip = smileLoopClip;
-        audio.Play();
+        GetComponent<AudioSource>().clip = smileStartClip;
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
+        GetComponent<AudioSource>().clip = smileLoopClip;
+        GetComponent<AudioSource>().Play();
     }
 }
