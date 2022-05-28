@@ -10,8 +10,7 @@ public class HudManager : MonoBehaviour
 
     public GameObject gameoverScrn;
     public Slider healthBar;
-    public GameObject retryBtn;
-    public GameObject quitBtn;
+    public SceneMManager mManager;
 
 
     private void Awake()
@@ -49,6 +48,7 @@ public class HudManager : MonoBehaviour
     public void Death()
     {
         gameoverScrn.SetActive(true);
+
         
     }
     

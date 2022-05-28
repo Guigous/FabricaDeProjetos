@@ -8,22 +8,9 @@ public class SceneMManager : MonoBehaviour
     public string sceneStart;
     
 
+    
 
-    public static SceneMManager Instance;
-
-    private void Awake()
-    {
-        if (!Instance)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
+ 
 
     public void Retry()
     {
