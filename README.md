@@ -47,29 +47,30 @@ GamePlay: Jogo de tiro em primeira pessoa e resolução de puzzles onde o person
 
 ##**PÁGINA 03 - FLUXO DO JOGO**
 
-Fluxo de Jogo: Montezumo e um jogo que acompanha as aventuras de Cris, uma arqueologa, que apos se embrenhar nas matas da america central desperta a ira de uma antiga deusa que a desafia a jogando em um templo a muito abandonado, fazendo com que ela passe por diversas camaras com plataformas e desafios. 
+Fluxo de Jogo: Montezumo e um jogo que acompanha as aventuras de Cris, uma arqueologa, que apos se embrenhar nas matas da america central desperta a ira de uma antiga deusa que a desafia jogando-a em um templo há muito abandonado, fazendo com que ela passe por diversas camaras com plataformas e desafios. 
 
 
 ##**PÁGINA 04 - PERSONAGENS E CONTROLES**
 Cris: A protagonista. Uma jovem arqueologa e exploradora, recebe o desafio da Deusa e imediatamente toma uma atitude e parte para enfrentar os desafios do templo antigo.
-No inicio de Montezumo a protagonista recebe um artefato-canhao sagrado (chamado Jaguar). O Jogador consegue se movimentar, pular, e se propulsionar para frente enquanto atira com o canhao em pequenas esferas coloridas.
+Deusa Misteriosa: uma figura que desafia Cris ao colocá-la num ambiente inexplorado e cheio de armadilhas
+O Jogador consegue se movimentar, pular, e se propulsionar para frente para se levar ao final da fase passando pelos desafios.
 
 ##**PÁGINA 05 - PRINCIPAIS CONCEITOS DO GAMEPLAY E CARACTERÍSTICAS DA PLATAFORMA**
 
-Cada fase e uma camara diferente do templo com armadilhas diversas e desafios, onde o jogador precisa fazer a fila de bolas desaparecer por completo somando as bolas no percurso com as disparadas pelo Jaguar e se protegendo das armadilhas que o templo possui
+Cada fase e uma camara diferente do templo com armadilhas diversas e desafios, onde o jogador precisa passar com cuidado e se protegendo das armadilhas que o templo possui
 
 ##**PÁGINA 06 - MUNDO DO JOGO**
 
-Montezumo se passa em um templo antigo em uma floresta da america central onde o acesso e muito restrito devido a dificuldade do trajeto, animais selvagens e a densidade da mata ao seu redor.
-Dentro do templo o ambiente muda para um tipo de catacumba ha muito abandonada com paredes cheias de musgo, cipos pendurados, paredes rachadas, armadilhas de espinhos, buracos sem fundo e uma penumbra, que apesar das tochas que magicamente se acendem para iluminar o ambiente, continua constante.
+Montezumo se passa em um templo antigo em uma floresta da america central onde o acesso é muito restrito devido à dificuldade do trajeto, animais selvagens e a densidade da mata ao seu redor.
+Dentro do templo o ambiente muda para um tipo de catacumba há muito abandonada com paredes cheias de musgo, cipos pendurados, paredes rachadas, armadilhas de espinhos, buracos sem fundo e uma penumbra, que apesar das tochas que magicamente se acendem para iluminar o ambiente, continua constante.
 
 ##**PÁGINA 07 - INTERFACE**
 
-A interface conta com uma HUD que contempla no numero de vidas pontuacao e a cor da proxima bola a ser disparada.
+A interface conta com uma HUD que contempla no numero de vidas.
 
 ##**PÁGINA 08 - MECÂNICAS E POWER-UPS**
 
-As mecanicas sao : Pula, Andar, Impulso, Atirar.
+As mecânicas sao : Pula, Andar, Impulso.
 
 ##**PÁGINA 09 - INIMIGOS E BOSSES**
 
@@ -77,5 +78,5 @@ As mecanicas sao : Pula, Andar, Impulso, Atirar.
 
 ##**PÁGINA 10 - CENAS DE CORTE, MATERIAIS DE BÔNUS E CONCORRÊNCIA**
 
-As cenas de corte serao em formato de historia em quadrinho sendo reproduzidas no inicio e entre as fases.
-Concorrentes: Candy Crush e Jogos casuais de Puzzle.
+As cenas de corte serão em formato de história em quadrinho sendo reproduzidas no início e entre as fases.
+Concorrentes: Phantom Abyss.
