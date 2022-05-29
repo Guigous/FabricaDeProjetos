@@ -19,7 +19,7 @@ High Concept
 
 • O público alvo a ser alcançado e sua classificação indicativa permitida; Público Alvo: 30 e 10 anos. Classificação Indicativa: Livre para todos os Públicos.
 
-• Equipe necessária para o desenvolvimento e implementação; Bruno(Ilustrador/Modelador) Alison (Ilustrador) Guilherme(Programação/Som/Documentação) Gabriel(Programação) Pedro(Ilustrador)
+• Equipe necessária para o desenvolvimento e implementação; Bruno(Modelador) Alison (Ilustrador) Guilherme(Programação/Som/Documentação) Gabriel(Programação) Pedro(Ilustrador)
 
 • Uma previsão de cronograma e orçamento do projeto.
  Previsão de acabamento: 5 meses
