@@ -5,9 +5,9 @@ High Concept
 
 • Titulo; Montezumo
 
-• Uma descrição em uma linha do funcionamento do jogo; Deve-se atirar em um segmento de esferas no padrão correto para pará-las.
+• Uma descrição em uma linha do funcionamento do jogo; Deve-se desviar de armadilhas e pular plataformas para chegar no fim das fases.
 
-• Definição do seu gênero (se é de ação, ou RPG, por exemplo); First Person Shooter e Puzzle em tempo real.
+• Definição do seu gênero (se é de ação, ou RPG, por exemplo); Plataforma em Terceira pessoa e Puzzle em tempo real.
 
 • Suas mecânicas principais (um conjunto de regras); Assim que a fase começar, o jogador deve observar a ordem de cores das esferas sendo levadas ao final do caminho e atirar outra esfera, se o impacto na fila criar um conjunto de três esferas da mesma cor, essas vão se desfazer e diminuir a fila. O jogo acaba quando a fila de esferas chega no fim do percurso (derrota) ou quando todas as esferas nela são destruídas (vitória).
 
