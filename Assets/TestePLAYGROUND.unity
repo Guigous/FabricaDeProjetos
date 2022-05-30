@@ -332,11 +332,6 @@ Transform:
   m_Father: {fileID: 3036289}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &393341611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3592239363466613255, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
-  m_PrefabInstance: {fileID: 3592239363223821610}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &437900069
 GameObject:
   m_ObjectHideFlags: 3
@@ -467,11 +462,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5957227636394742201, guid: 01ee188e3557a574d8a42a42c20140cd, type: 3}
   m_PrefabInstance: {fileID: 5957227635865930567}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &640329511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3592239362820905055, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
-  m_PrefabInstance: {fileID: 3592239363223821610}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &663480789 stripped
 MonoBehaviour:
@@ -1015,7 +1005,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561124707}
-  m_LocalRotation: {x: 0.14376953, y: 0.68782204, z: -0.14183177, w: 0.69721943}
+  m_LocalRotation: {x: 0.14376953, y: 0.6878221, z: -0.1418318, w: 0.6972194}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1380,6 +1370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3592239364317438172, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3592239364938952037, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1505,7 +1499,7 @@ PrefabInstance:
     - target: {fileID: 4811336293764958895, guid: fdcf261887c264b43bea7e5f60481784, type: 3}
       propertyPath: quitBtn
       value: 
-      objectReference: {fileID: 640329511}
+      objectReference: {fileID: 0}
     - target: {fileID: 4811336293764958895, guid: fdcf261887c264b43bea7e5f60481784, type: 3}
       propertyPath: mManager
       value: 
@@ -1513,7 +1507,7 @@ PrefabInstance:
     - target: {fileID: 4811336293764958895, guid: fdcf261887c264b43bea7e5f60481784, type: 3}
       propertyPath: retryBtn
       value: 
-      objectReference: {fileID: 393341611}
+      objectReference: {fileID: 0}
     - target: {fileID: 4811336293764958895, guid: fdcf261887c264b43bea7e5f60481784, type: 3}
       propertyPath: healthBar
       value: 
