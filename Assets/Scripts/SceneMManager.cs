@@ -8,10 +8,6 @@ public class SceneMManager : MonoBehaviour
     public string sceneStart;
     
 
-    
-
- 
-
     public void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
