@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameoverScrn: {fileID: 0}
   healthBar: {fileID: 0}
+  mManager: {fileID: 0}

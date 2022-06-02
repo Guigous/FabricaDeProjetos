@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     public float jumpForce;
     public LayerMask ground;
     
+    
 
         //Raycast Settings
         RaycastHit hit;
@@ -50,7 +51,7 @@ public class CharacterMovement : MonoBehaviour
 	    input.x = Input.GetAxis("Horizontal");
 	    input.y = Input.GetAxis("Vertical");
 
-        Grounded();
+        
         
         isHiting = Physics.Raycast(transform.position, Vector3.down,out hit,maxDistance);
 
@@ -118,23 +119,8 @@ public class CharacterMovement : MonoBehaviour
                 this.enabled = false;
             }
         }
-
-        private bool isGrounded;
-
-        public void Grounded()
-        {
-            if(isHiting)
-            {
-                isGrounded = true;
-                
-
-            }
-            else
-            {
-                isGrounded = false;
-                
-            }
-        }
+        
+        
 
         private void OnDrawGizmos()
         {

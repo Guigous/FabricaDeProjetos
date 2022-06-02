@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 3592239364295702685}
   - component: {fileID: 3592239364295702684}
   - component: {fileID: 3592239364295702687}
+  - component: {fileID: 1966769682}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -225,6 +226,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1966769682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592239364295702686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2944b88dfd4d34c4cb05036c767a87a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameoverScrn: {fileID: 3592239364317438172}
+  healthBar: {fileID: 3592239363853546751}
+  mManager: {fileID: 0}
 --- !u!1 &3592239364317438172
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +254,7 @@ GameObject:
   - component: {fileID: 3592239364317438162}
   m_Layer: 5
   m_Name: GameOver
-  m_TagString: Untagged
+  m_TagString: GameOver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -496,7 +512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7375515855525347606}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+        m_TargetAssemblyTypeName: SceneMManager, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7070534840736319274
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,4 +644,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7018099839641577797}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+        m_TargetAssemblyTypeName: SceneMManager, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
