@@ -58,8 +58,8 @@ public class HudManager : MonoBehaviour
     public void Death()
     {
         gameoverScrn.SetActive(true);
-        
-        
+        Cursor.lockState = CursorLockMode.None;
+
     }
     public void Disable()
     {

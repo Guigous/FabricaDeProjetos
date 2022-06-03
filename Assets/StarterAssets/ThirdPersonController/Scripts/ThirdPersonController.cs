@@ -134,6 +134,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            Cursor.lockState = CursorLockMode.Locked;
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -150,10 +151,17 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+            
         }
 
         private void Update()
         {
+            if(HudManager.Instance.healthBar.value <= 0)
+            {
+                
+                HudManager.Instance.Death();
+            }
+
             _hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
@@ -388,5 +396,7 @@ namespace StarterAssets
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
+
+
     }
 }

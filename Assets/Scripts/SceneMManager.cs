@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class SceneMManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SceneMManager : MonoBehaviour
     public static SceneMManager Instance;
     public Button quit;
     public Button restart;
+    public Button startGame;
 
     private void Awake()
     {
@@ -32,7 +34,7 @@ public class SceneMManager : MonoBehaviour
     public void Retry()
     {
         HudManager.Instance.healthBar.value = 3;
-        SceneManager.LoadScene("TestePLAYGROUND");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         HudManager.Instance.Disable();
     }
     public void Quit()
