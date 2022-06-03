@@ -117,6 +117,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 HudManager.Instance.Death();
                 this.enabled = false;
+                
             }
         }
         

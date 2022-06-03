@@ -12,7 +12,7 @@ public class HudManager : MonoBehaviour
     public GameObject gameoverScrn;
     public Slider healthBar;
     public SceneMManager mManager;
-    public float lives = 3f;
+    public float lives = 3;
 
     private void Awake()
     {
@@ -40,8 +40,7 @@ public class HudManager : MonoBehaviour
     {
 
         healthBar.value = lives;
-        Disable();
-        Debug.Log(lives);
+
 
     }
 

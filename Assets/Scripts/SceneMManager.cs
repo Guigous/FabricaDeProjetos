@@ -31,8 +31,9 @@ public class SceneMManager : MonoBehaviour
 
     public void Retry()
     {
+        HudManager.Instance.healthBar.value = 3;
         SceneManager.LoadScene("TestePLAYGROUND");
-        Debug.Log("Cai Aqui");
+        HudManager.Instance.Disable();
     }
     public void Quit()
     {
