@@ -241,6 +241,7 @@ MonoBehaviour:
   gameoverScrn: {fileID: 3592239364317438172}
   healthBar: {fileID: 3592239363853546751}
   mManager: {fileID: 0}
+  lives: 3
 --- !u!1 &3592239364317438172
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +648,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
         m_TargetAssemblyTypeName: SceneMManager, Assembly-CSharp
-        m_MethodName: Retry
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

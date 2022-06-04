@@ -12,7 +12,7 @@ public class SceneMManager : MonoBehaviour
     public static SceneMManager Instance;
     public Button quit;
     public Button restart;
-    public Button startGame;
+    
 
     private void Awake()
     {
@@ -60,7 +60,11 @@ public class SceneMManager : MonoBehaviour
     {
         quit.GetComponent<SceneMManager>();
         restart.GetComponent<SceneMManager>();
-    }
+        
+        
+        
+        
+    } 
 
     // Update is called once per frame
     void Update()

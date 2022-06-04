@@ -160,6 +160,7 @@ namespace StarterAssets
             {
                 
                 HudManager.Instance.Death();
+
             }
 
             _hasAnimator = TryGetComponent(out _animator);
