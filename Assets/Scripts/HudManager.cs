@@ -27,13 +27,7 @@ public class HudManager : MonoBehaviour
         }
 
     }
-    /*void OnEnable()
-    {
-        Debug.Log("OnEnable called");
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-    */
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +38,7 @@ public class HudManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void Damage()
     {

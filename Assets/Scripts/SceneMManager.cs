@@ -8,10 +8,11 @@ using TMPro;
 public class SceneMManager : MonoBehaviour
 {
 
-    public string sceneStart;
+    public string proximaFase;
     public static SceneMManager Instance;
     public Button quit;
     public Button restart;
+    
     
 
     private void Awake()
@@ -41,9 +42,9 @@ public class SceneMManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void StartGame()
+    public void ProximaFase()
     {
-        SceneManager.LoadScene(sceneStart);
+        SceneManager.LoadScene(proximaFase);
         
     }
 
@@ -66,11 +67,6 @@ public class SceneMManager : MonoBehaviour
         
     } 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     
 }
