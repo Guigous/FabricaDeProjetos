@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af8566a172961b4d9e42057865b00b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneStart: 
+  proximaFase: 
   quit: {fileID: 0}
   restart: {fileID: 0}

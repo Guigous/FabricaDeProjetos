@@ -141,11 +141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.63, y: 0.79, z: 0.48}
-  ShoulderOffset: {x: 0, y: 0.18, z: 4.61}
+  Damping: {x: 0, y: 0, z: 0}
+  ShoulderOffset: {x: 0, y: 0, z: 0}
   VerticalArmLength: 0
   CameraSide: 0.501
-  CameraDistance: 7.74
+  CameraDistance: 9.01
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 64

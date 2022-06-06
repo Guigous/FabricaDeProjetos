@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,6 +133,10 @@ PrefabInstance:
     - target: {fileID: 1000014043743786, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
       propertyPath: m_Name
       value: Block 7x5x7 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014043743786, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000014231025256, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
       propertyPath: m_RootOrder
@@ -272,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -334,6 +342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -395,6 +407,10 @@ PrefabInstance:
     - target: {fileID: 1000011681221444, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
       propertyPath: m_Name
       value: Round Wide 12 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011681221444, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000011779009478, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
       propertyPath: m_RootOrder
@@ -496,6 +512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -585,6 +605,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d541fe76856d61946899709c19457e36, type: 3}
+--- !u!1001 &181122900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2070925441746177671, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_Name
+      value: PlayerFollowCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -95.024055
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 93.4413
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7394314
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67323196
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 511058495}
+    - target: {fileID: 2070925441746177913, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 511058495}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
 --- !u!1001 &184818081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -595,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -677,6 +766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Hollow 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012384024774, guid: aca7795d3bfb385448c2893b68b67c81, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012365491782, guid: aca7795d3bfb385448c2893b68b67c81, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -739,6 +832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013296790728, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012274991244, guid: 03b0ed4871f8e8d46aab17cd9b867655, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -800,6 +897,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -874,6 +975,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -1066,6 +1171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -1128,6 +1237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Pineapple 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1189,6 +1302,10 @@ PrefabInstance:
     - target: {fileID: 1000010774182382, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
       propertyPath: m_Name
       value: Idol 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010774182382, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010777763524, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
       propertyPath: m_RootOrder
@@ -1316,6 +1433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1397,6 +1518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Pineapple 4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -1471,6 +1596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1532,6 +1661,10 @@ PrefabInstance:
     - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_Name
       value: Wall Tile 4x4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
@@ -1610,10 +1743,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6076457827677701952, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
-      propertyPath: JumpHeight
-      value: 2.7
-      objectReference: {fileID: 0}
     - target: {fileID: 6076457827677701963, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
       propertyPath: m_Name
       value: PlayerAsobiCrisFinal
@@ -1628,7 +1757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6852291290805001713, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.384628
+      value: 20.487
       objectReference: {fileID: 0}
     - target: {fileID: 6852291290805001713, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1664,6 +1793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
+--- !u!4 &511058495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1920205828316134935, guid: dff108df92528184a86ca3f7b36c8a02, type: 3}
+  m_PrefabInstance: {fileID: 503417009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &519825000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1674,6 +1808,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -1748,6 +1886,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -1868,6 +2010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -1929,6 +2075,10 @@ PrefabInstance:
     - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_Name
       value: Sig Sag 1x4 One Sided
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013069231196, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_RootOrder
@@ -2055,6 +2205,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -2194,6 +2348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -2294,6 +2452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -2356,6 +2518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Wide 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011681221444, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011779009478, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2407,6 +2573,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011779009478, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
   m_PrefabInstance: {fileID: 704241144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &711352961
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1966769682, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: mManager
+      value: 
+      objectReference: {fileID: 1334895924}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702674, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592239364295702686, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
 --- !u!1001 &712277935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2417,6 +2684,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -2498,6 +2769,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -2637,6 +2912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -2698,6 +2977,10 @@ PrefabInstance:
     - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_Name
       value: Wall Tile 4x4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
@@ -2761,6 +3044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 85
@@ -2822,6 +3109,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -2980,6 +3271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3042,6 +3337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -3103,6 +3402,10 @@ PrefabInstance:
     - target: {fileID: 1000014235801208, guid: e36c72729446ee042b8cf10e553af4c2, type: 3}
       propertyPath: m_Name
       value: Floor Blocks 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014235801208, guid: e36c72729446ee042b8cf10e553af4c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013645099218, guid: e36c72729446ee042b8cf10e553af4c2, type: 3}
       propertyPath: m_RootOrder
@@ -3172,6 +3475,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -3273,6 +3580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -3334,6 +3645,10 @@ PrefabInstance:
     - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_Name
       value: Block 1x5 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
@@ -3428,6 +3743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 7x5x7
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014043743786, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014231025256, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -3479,6 +3798,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000014231025256, guid: 228f38b746aa99e41905e48ee12546ce, type: 3}
   m_PrefabInstance: {fileID: 1015411353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1015816618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_Name
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -95.024055
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.588
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 93.4413
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7394314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67323196
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
 --- !u!1001 &1018564717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3489,6 +3865,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -3551,6 +3931,10 @@ PrefabInstance:
     - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_Name
       value: Block 1x5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
@@ -3664,6 +4048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -3725,6 +4113,10 @@ PrefabInstance:
     - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_Name
       value: Ground + Mix 8x8 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
@@ -3864,6 +4256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x5
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3925,6 +4321,10 @@ PrefabInstance:
     - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_Name
       value: Ground + Mix 8x8 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
@@ -3996,6 +4396,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 360d04f4e30eda94f80032f4395bae8a, type: 3}
+--- !u!114 &1115147024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 620533281874460335, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+  m_PrefabInstance: {fileID: 711352961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1175509051
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,6 +4511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag 1x4 One Sided (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013069231196, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4188,6 +4603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -4249,6 +4668,10 @@ PrefabInstance:
     - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_Name
       value: Wall Tile 4x4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
@@ -4312,6 +4735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -4373,6 +4800,10 @@ PrefabInstance:
     - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_Name
       value: Wall Tile 4x4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
@@ -4474,6 +4905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013326435574, guid: 1bb5689aff5896c44a2c10801d1d1423, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013480976020, guid: 1bb5689aff5896c44a2c10801d1d1423, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4536,6 +4971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -4597,6 +5036,10 @@ PrefabInstance:
     - target: {fileID: 1000011681221444, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
       propertyPath: m_Name
       value: Round Wide 12 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011681221444, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000011779009478, guid: 65a6635a117343745ad44379e3179ef2, type: 3}
       propertyPath: m_RootOrder
@@ -4679,6 +5122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -4740,6 +5187,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -4822,6 +5273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -4892,6 +5347,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d541fe76856d61946899709c19457e36, type: 3}
+--- !u!114 &1334895924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+  m_PrefabInstance: {fileID: 1852054047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af8566a172961b4d9e42057865b00b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1337724492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4902,6 +5368,10 @@ PrefabInstance:
     - target: {fileID: 1000012384024774, guid: aca7795d3bfb385448c2893b68b67c81, type: 3}
       propertyPath: m_Name
       value: Round Hollow 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012384024774, guid: aca7795d3bfb385448c2893b68b67c81, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012365491782, guid: aca7795d3bfb385448c2893b68b67c81, type: 3}
       propertyPath: m_RootOrder
@@ -4964,6 +5434,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -5065,6 +5539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x5 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -5158,6 +5636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Pineapple 4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -5231,6 +5713,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -5313,6 +5799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -5394,6 +5884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -5467,6 +5961,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -5549,6 +6047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -5611,6 +6113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -5672,6 +6178,10 @@ PrefabInstance:
     - target: {fileID: 1000010774182382, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
       propertyPath: m_Name
       value: Idol 6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010774182382, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010777763524, guid: 422535b6a130b0743bc1ca47febfd435, type: 3}
       propertyPath: m_RootOrder
@@ -5742,6 +6252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -5803,6 +6317,10 @@ PrefabInstance:
     - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_Name
       value: Wall Tile 4x4 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
@@ -5885,6 +6403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -5965,6 +6487,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -6154,6 +6680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 66
@@ -6205,6 +6735,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
   m_PrefabInstance: {fileID: 1534704182}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1537423894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5821194762693145015, guid: f529c92dc3ac8c44dbcb698950ee1177, type: 3}
+  m_PrefabInstance: {fileID: 711352961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1555133309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
@@ -6233,7 +6774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1555991192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Level 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6371,6 +6912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -6432,6 +6977,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -6514,6 +7063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -6595,6 +7148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6656,6 +7213,10 @@ PrefabInstance:
     - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_Name
       value: Sig Sag 1x4 One Sided (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013069231196, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_RootOrder
@@ -6744,6 +7305,10 @@ PrefabInstance:
     - target: {fileID: 1000011145740162, guid: d98c8a68f8a40ba4ea6133302529ede3, type: 3}
       propertyPath: m_Name
       value: Block Ruin Wall 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011145740162, guid: d98c8a68f8a40ba4ea6133302529ede3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013157248246, guid: d98c8a68f8a40ba4ea6133302529ede3, type: 3}
       propertyPath: m_RootOrder
@@ -6852,6 +7417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Pineapple 4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -6944,6 +7513,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -7057,6 +7630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -7119,6 +7696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -7180,6 +7761,10 @@ PrefabInstance:
     - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_Name
       value: Sig Sag 1x4 One Sided (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011828322814, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013069231196, guid: 41fb9119a5650e142a25dd8e9f0184f1, type: 3}
       propertyPath: m_RootOrder
@@ -7296,6 +7881,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d541fe76856d61946899709c19457e36, type: 3}
+--- !u!1001 &1852054047
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: quit
+      value: 
+      objectReference: {fileID: 1115147024}
+    - target: {fileID: 6299367765230959848, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: restart
+      value: 
+      objectReference: {fileID: 1537423894}
+    - target: {fileID: 6299367765230959849, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_Name
+      value: Scene manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.277376
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3900783
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.4969044
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299367765230959855, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37b6e090aa094e44d84a854aabbc0846, type: 3}
 --- !u!1001 &1854953713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7306,6 +7956,10 @@ PrefabInstance:
     - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_Name
       value: Ground + Mix 8x8 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
@@ -7368,6 +8022,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -7526,6 +8184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Dark 1x8 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -7587,6 +8249,10 @@ PrefabInstance:
     - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_Name
       value: Ground + Dark 1x8 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011764440532, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012718631592, guid: f5ebbe4869c6d62449223e3586df551f, type: 3}
       propertyPath: m_RootOrder
@@ -7669,6 +8335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Round Pineapple 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012574637910, guid: e65bfd7311cd5c548ab4ce4374b6ca1a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012643783990, guid: e65bfd7311cd5c548ab4ce4374b6ca1a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7730,6 +8400,10 @@ PrefabInstance:
     - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_Name
       value: Block 1x5 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
@@ -7805,6 +8479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground + Mix 8x8 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010485907634, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012079268450, guid: 789c66d21a2b0e44a8aec2dc4b18cf03, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -7866,6 +8544,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -7959,6 +8641,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -8060,6 +8746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Tile 4x4 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013419234888, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013680355614, guid: 6cd7440ceab5bd244aad79580a2f7817, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -8160,6 +8850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 1x5 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -8233,6 +8927,10 @@ PrefabInstance:
     - target: {fileID: 1000011723726894, guid: 4e538435110f3524cb436ecb55f249fc, type: 3}
       propertyPath: m_Name
       value: Block Ruin Wall 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011723726894, guid: 4e538435110f3524cb436ecb55f249fc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010698013794, guid: 4e538435110f3524cb436ecb55f249fc, type: 3}
       propertyPath: m_RootOrder
@@ -8321,6 +9019,10 @@ PrefabInstance:
     - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_Name
       value: Round Pineapple 4 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013449250146, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000010939322414, guid: ce601b375e3329c4bbd4372c8e9d5db6, type: 3}
       propertyPath: m_RootOrder
@@ -8452,6 +9154,10 @@ PrefabInstance:
     - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_Name
       value: Block 1x5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012117707472, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013675817666, guid: 36407ad5ee1f4da4e8e9c83a83f2eec8, type: 3}
       propertyPath: m_RootOrder
