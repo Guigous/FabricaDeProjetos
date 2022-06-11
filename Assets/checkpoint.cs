@@ -22,8 +22,15 @@ public class checkpoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Teleport();
             HudManager.Instance.Damage();
-            Player.transform.position = respawnPoint.transform.position;
+            
         }
+    }
+    public void Teleport()
+    {
+        Player.transform.position = respawnPoint.transform.position;
+        Debug.Log("TPRealisado");
+        
     }
 }
