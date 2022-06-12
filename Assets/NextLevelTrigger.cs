@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevelTrigger : MonoBehaviour
 {
     private MeshRenderer mr;
+    public string proximaFase;
 
     private void Start()
     {
@@ -15,6 +16,6 @@ public class NextLevelTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneMManager.Instance.ProximaFase();
+        SceneManager.LoadScene(proximaFase);
     }
 }
